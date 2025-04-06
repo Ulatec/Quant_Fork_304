@@ -725,7 +725,7 @@ public class StockRangeTester implements ApplicationRunner {
             try {
                 String url = "https://api.polygon.io/v2/aggs/ticker/" + ticker + "/range/1/day/" +
                         DateFormatter.formatLocalDate(from) + "/" + DateFormatter.formatLocalDate(to) + "?adjusted=true&sort=asc&limit=5500" +
-                        "&apiKey=";
+                        "&apiKey=rcJCxVUqKDfgcSgLSkDkQpnfVn0rk9Ne";
                 Connection.Response oilResponse = Jsoup.connect
                                 (url)
                         .method(Connection.Method.GET)

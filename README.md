@@ -53,3 +53,4 @@
 - `Fetchers/` – Logic to acquire and preprocess historical data.
 
 ![img.png](img.png)
+![img_1.png](img_1.png)
