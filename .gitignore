@@ -1,0 +1,14 @@
+/.idea/
+/.gradle/
+/build/
+/.idea/
+/build/
+
+gradle/wrapper/gradle-wrapper.jar
+
+gradle/wrapper/gradle-wrapper.properties
+/build/*
+
+*.class
+
+*.log
