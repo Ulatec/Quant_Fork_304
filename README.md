@@ -1,6 +1,6 @@
 # 📊 Quant_Fork
 
-**Quant_Fork** is a Java-based quantitative trading backtesting engine. It simulates trading strategies using historical stock and options data to evaluate performance and refine strategy parameters. The system models both implied and realized volatility, tracks trades, and performs statistical regressions for signal generation.
+**Quant_Fork** is a Java-based quantitative trading backtesting engine. It simulates trading strategies using historical stock and options data to evaluate performance and refine strategy parameters. The system models both implied and realized volatility, tracks trades, and performs multi-series cumulative distribution functions for signal generation.
 
 ---
 
