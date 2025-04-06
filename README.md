@@ -35,12 +35,12 @@
 
 ## 🧠 Statistical Techniques Used
 
+- Cumulative Distribution Functions
 - Linear Regression
 - Exponential Curve Fitting
 - Moving Average Smoothing
 - Volatility Clustering
 - Bucket Analysis for PnL (Profit and Loss)
-- Cumlative Distribution Functions
 ---
 
 ## 📁 Project Structure
