@@ -51,3 +51,5 @@
 - `Repository/` – Database interaction logic for volatility data.
 - `Threads/` – Multi-threaded data ingestion and simulation support.
 - `Fetchers/` – Logic to acquire and preprocess historical data.
+
+![img.png](img.png)

@@ -145,24 +145,7 @@ public class StockRangeTester implements ApplicationRunner {
        // boolean[] directionArray = new boolean[longOpenVolatilitySlopeParamCount];
         boolean[] reversedFlagArray = new boolean[longOpenVolatilitySlopeParamCount];
         boolean[] priorSuccessArray = new boolean[longOpenVolatilitySlopeParamCount];
-//        for(int i =0; i < longOpenVolatilitySlopeParamCount; i++){
-//            workingArray[i]=initialLongOpenVolatilitySlope;
-//        }
-//        for(int i =0; i < longOpenVolatilitySlopeParamCount; i++){
-//            incrementerArray[i]=incrementerLongOpenVolatilitySlope;
-//        }
-//        for(int i =0; i < longOpenVolatilitySlopeParamCount; i++){
-//            priorFlipArray[i]=false;
-//        }
-//        for(int i =0; i < longOpenVolatilitySlopeParamCount; i++){
-//            directionArray[i]=false;
-//        }
-//        for(int i =0; i < longOpenVolatilitySlopeParamCount; i++){
-//            reversedFlagArray[i]=false;
-//        }
-//        for(int i =0; i < longOpenVolatilitySlopeParamCount; i++){
-//            priorSuccessArray[i]=false;
-//        }
+
         double[] volSlopeValues = new double[6];
         volSlopeValues[0] = -0.12;
         for(int j = 1; j <volSlopeValues.length ; j++){
@@ -412,25 +395,13 @@ public class StockRangeTester implements ApplicationRunner {
             backTestThreads =1;
             fullDateRange = false;
         }
-        LocalDate today = LocalDate.now();
-        // ArrayList<Bar> oilBars = (ArrayList<Bar>) getBarsBetweenDates(startDate, endDate, "USO");
-        //  ArrayList<Bar> priorOilBars = (ArrayList<Bar>) getBarsBetweenDates(priorStartDate, priorEndDate, "USO");
-        //ArrayList<Bar> dollarBars = (ArrayList<Bar>) getBarsBetweenDates(startDate, endDate, "UUP");
-        //ArrayList<Bar> priordollarBars = (ArrayList<Bar>) getBarsBetweenDates(priorStartDate, priorEndDate, "UUP");
-       // Collections.reverse(priordollarBars);
-        // ArrayList<Bar> nasdaqBars = (ArrayList<Bar>) getBarsBetweenDates(startDate, endDate, "QQQ");
+
         ArrayList<Bar> priorNasdaqBars = (ArrayList<Bar>) getBarsBetweenDates(priorStartDate, priorEndDate, "QQQ");
         Collections.reverse(priorNasdaqBars);
-        // ArrayList<Bar> priorGoldBars = (ArrayList<Bar>) getBarsBetweenDates(priorStartDate, priorEndDate, "GLD");
-        // ArrayList<Bar> priorGasolineBars = (ArrayList<Bar>) getBarsBetweenDates(priorStartDate, priorEndDate, "UGA");
-        // ArrayList<Bar> lowBetaBars = (ArrayList<Bar>) getBarsBetweenDates(priorStartDate, priorEndDate, "SIXL");
-        // ArrayList<Bar> highBetaBars = (ArrayList<Bar>) getBarsBetweenDates(priorStartDate, priorEndDate, "SPHB");
+
         List<ConfigurationTest> savedTest = new ArrayList<>();
         double pct = 1;
-//        if (!isDayComplete()) {
-//            LocalDateTime localDateTime = LocalDateTime.now();
-//            pct = calculateVolumeAverage(localDateTime);
-//        }
+
         ExecutorService executorService2 = Executors.newScheduledThreadPool(64);
         ExecutorService executorService3 = Executors.newScheduledThreadPool(16);
 
