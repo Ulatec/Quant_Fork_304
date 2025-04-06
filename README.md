@@ -31,6 +31,8 @@
 ### 4. Option Contracts
 - Models include strike, expiration, implied volatility, VWAP, and price for evaluating options strategies.
 
+### 5. Cumulative Distributions
+- Relies upon CDFs for relative extrema to generate trade signals.
 ---
 
 ## 🧠 Statistical Techniques Used
